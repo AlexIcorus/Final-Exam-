@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Revive Goods</title> 
+<!-- Fav Icon -->
+<link rel="icon" href="Pics/revive-goods-logo.png" type="image/x-icon">
+<!-- Link To CSS -->
+<link rel="stylesheet" href="CSS/Styles.css">
+<!-- Footer -->
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/input.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Box Icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- Swiper CSS File Link -->
+<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+</head> 
+
+<body> 
+    <!--loader-->
+    <div id="preloader">
+        <div class="loading">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+            <span class="shape shape-4"></span>
+        </div>
+    </div>
+
+
+    <!--Custom Scroll Bar-->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+    <!-- header -->
+    <header>
+      <!-- Nav -->
+      <div class="nav container">
+          <!-- Logo -->
+          <a href="./home.html">
+              <img src="./Pics/revive-goods-logo.png" alt="Revive Goods Logo">
+          </a>
+      
+
+          <form class="search-form" onsubmit="event.preventDefault();" role="search">
+              <label for="search">Search for stuff</label>
+              <input id="search" type="search" placeholder="Search..." autofocus required />
+              <button type="submit">Go</button>    
+            </form>
+          
+          <!-- Nav Icon -->
+              <div class="nav-icons"> 
+                   <i class='bx bx-cart' id="bell-icon"><span></span></i> 
+                  <a href="./auth-login-Register-basic.html"><i class='bx bxs-user-circle'></i> </a>
+                     
+                          <div class="menu-icon"> 
+                              <div class="line1"></div> 
+                              <div class="line2"></div> 
+                              <div class="line3"></div> 
+                          </div>
+              </div>
+
+              
+
+              
+              <div class="menu"> 
+                <div class="submenu">
+                    <img src="Pics/revive-goods-logo.png" alt="">
+                    <p>Revive Goods</p> 
+                </div>
+                    <div class="navbar"> 
+                        <li><a href="/profile.html">ໂປຣຟາຍ</a></li>
+                        <li><a href="home.html">ຫນ້າຫຼັກ</a></li> 
+                        <li><a href="home.html#Top hot">ມາແຮງ</a></li> 
+                        <li><a href="home.html#Trending Games">ຂອງຫລິ້ນ</a></li> 
+                        <li><a href="home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+                        <li><a href="home.html#Creative Games">ປື້ມ</a></li>
+                        <br>
+                        <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li> 
+                        <li><a href="contact.html">ຕິດຕໍ່</a></li> 
+                        <br>
+                        <li><a href="./auth-login-Register-basic.html">ອອກຈາກລະບົບ</a></li> 
+                    </div> 
+            </div>
+              
+          <!--Notification-->
+      <div class="notification">
+          <div class="notification-box">
+              <i class='bx bxs-check-circle' ></i>
+              <p>ສິນຄ້າທີ່ຕ້ອງການສັ່ງຊື້</p>
+          </div>
+          <div class="notification-box box-color">
+              <i class='bx bxs-check-circle' ></i>
+              <p>ໃສ່ຄູປອງເພື່ອຮັບສ່ວນຫຼຸດ</p>
+          </div>
+      </div>
+      </div>
+  </header>
+
+    
+    <!--Home Section Start-->
+    
+
+
+
+
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <br>
+<h1>ເພີ່ມຂໍ້ມູນຂາຍສິນຄ້າ</h1>
+<br>
+
+<label for="message" class="formbold-form-label">
+  ເພີ່ມຮູບພາບ
+</label>
+          <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+            <div id="drop">
+              ໃສ່ຮູບພາບ
+      
+              <a>Browse</a>
+              <input type="file" name="upl" multiple />
+            </div>
+      
+            <ul>
+              <!-- The file uploads will be shown here -->
+            </ul>
+      
+          </form>
+
+          <br>
+
+          <form action="https://formbold.com/s/FORM_ID" method="POST">
+
+            
+      
+
+            <div class="formbold-input-group">
+              <label  class="formbold-form-label"> ຊື່ສິນຄ້າ </label>
+              <input
+                type="text"
+                
+                
+                placeholder="ຊື່"
+                class="formbold-form-input"
+              />
+            </div>
+
+      
+            <div class="formbold-input-group">
+              <label for="age" class="formbold-form-label"> ລາຄາສິນຄ້າ </label>
+              <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="ລາຄາ"
+                class="formbold-form-input"
+              />
+            </div>
+      
+
+            <div class="formbold-input-group">
+              <label class="formbold-form-label">
+                ສະພາບສິນຄ້າ
+              </label>
+      
+              <select class="formbold-form-select" name="occupation" id="occupation">
+                <option value="90">90%</option>
+                <option value="80">80%</option>
+                <option value="70">70%</option>
+                <option value="60">60%</option>
+                <option value="50">50%</option>
+                <option value="40">40%</option>
+                <option value="30">30%</option>
+                <option value="20">20%</option>
+                <option value="10">10%</option>
+              </select>
+            </div>
+
+
+
+            <div class="formbold-input-group">
+              <label class="formbold-form-label">
+                ປະເພດຂອງສິນຄ້າ
+              </label>
+      
+              <select class="formbold-form-select" name="occupation" id="occupation">
+                <option value="Student">ອື່ນໆ</option>
+                <option value="frontend">ເສື້ອຜ້າ</option>
+                <option value="designer">ເຄື່ອງຫຼີ້ນ</option>
+                <option value="fullstack">ເຄື່ອງໃຊ້</option>
+                <option value="frontend">ໜັງສື</option>
+              </select>
+            </div>
+      
+            <div class="formbold-input-radio-wrapper">
+              <label for="ans" class="formbold-form-label">
+                ເພີ່ມຕົວເລືອກຂອງສິນຄ້າ
+              </label>
+      
+              <div class="container__item">
+                <form class="form">
+                  <input type="email" class="form__field" placeholder="ເພີ່ມຕົວເລືອກ 1" />
+                  <button type="button" class="btn btn--primary btn--inside uppercase">ເພີ່ມ</button>
+                </form>
+              </div>
+<br>
+              <div class="container__item">
+                <form class="form">
+                  <input type="email" class="form__field" placeholder="ເພີ່ມຕົວເລືອກ 2" />
+                  <button type="button" class="btn btn--primary btn--inside uppercase">ເພີ່ມ</button>
+                </form>
+              </div>
+            
+
+            </div>
+      
+            
+      
+            <div>
+              <label for="message" class="formbold-form-label">
+                ຄຳອະທິບາຍ
+              </label>
+              <textarea
+                rows="6"
+                name="message"
+                id="message"
+                placeholder="ຄຳອະທິບາຍ"
+                class="formbold-form-input"
+              ></textarea>
+            </div>
+      
+            <a href="/profile.html"><button class="formbold-btn">Submit</button></a>
+          </form>
+        </div>
+      </div>
+
+
+    
+    <!-- Start footer -->
+
+    <footer class="footer">
+      <div class="container-footer">
+       <div class="row">
+         <div class="footer-col">
+           <h4>company</h4>
+           <ul>
+             <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+             <li><a href="contact.html">ຕິດຕໍ່</a></li>
+           </ul>
+         </div>
+        <div class="footer-col">
+    <h4>Games</h4>
+    <ul>
+    <li><a href="./home.html#Trending Games">ມາແຮງ</a></li>
+    <li><a href="./home.html#Action Games">ຂອງຫລີ້ນ</a></li>
+    <li><a href="./home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+    <li><a href="./home.html#Creative Games">ປື້ມ</a></li>
+    </ul>
+    </div>
+         <div class="footer-col">
+           <h4>follow us</h4>
+           <div class="social-links">
+             <a href="https://web.facebook.com/PixelCrazy8bit"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://twitter.com/eightbitfun"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.instagram.com/8bitbh/"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_discover"><i class="fab fa-linkedin-in"></i></a>
+           </div>
+         </div>
+       </div>
+      </div>
+    </footer>
+   
+   <!-- end footer-->
+   
+    
+
+    
+    
+<!-- Link Swiper File -->
+    <script src="js/swiper-bundle.min.js"></script>
+<!-- Link To JS -->
+	<script src="js/main.js"></script>
+<!-- Link To JS Slide -->
+	<script src="js/slide.js"></script>
+  <script src="https://kit.fontawesome.com/51a07ca7f1.js" crossorigin="anonymous"></script>
+
+
+
+<!--=========of upload img===========-->
+<!-- JavaScript Includes -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js-of-img/jquery.knob.js"></script>
+
+<!-- jQuery File Upload Dependencies -->
+<script src="js-of-img/jquery.ui.widget.js"></script>
+<script src="js-of-img/jquery.iframe-transport.js"></script>
+<script src="js-of-img/jquery.fileupload.js"></script>
+
+<!-- Our main JS file -->
+<script src="js-of-img/script.js"></script>
+
+
+<!-- Only used for the demos. Please ignore and remove. --> 
+    <script src="http://cdn.tutorialzine.com/misc/enhance/v1.js" async></script>
+
+
+</body> 
+</html> 
+
+

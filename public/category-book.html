@@ -1,0 +1,603 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Revive Goods</title> 
+<!-- Fav Icon -->
+<link rel="icon" href="Pics/revive-goods-logo.png" type="image/x-icon">
+<!-- Link To CSS -->
+<link rel="stylesheet" href="CSS/Styles.css">
+<!-- Footer -->
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/category-bar.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Box Icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- Swiper CSS File Link -->
+<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+</head> 
+<div id="preloader">
+    <div class="loading">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+    </div>
+</div>
+<body> 
+    <!--loader-->
+    
+
+
+    <!--Custom Scroll Bar-->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="./home.html">
+                <img src="./Pics/revive-goods-logo.png" alt="Revive Goods Logo">
+            </a>
+        
+
+            <form class="search-form" onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit">Go</button>    
+              </form>
+            
+            <!-- Nav Icon -->
+                <div class="nav-icons"> 
+                     <i class='bx bx-cart' id="bell-icon"><span></span></i> 
+                    <a href="./auth-login-Register-basic.html"><i class='bx bxs-user-circle'></i> </a>
+                       
+                            <div class="menu-icon"> 
+                                <div class="line1"></div> 
+                                <div class="line2"></div> 
+                                <div class="line3"></div> 
+                            </div>
+                </div>
+
+                
+
+                
+                <div class="menu"> 
+                    <div class="submenu">
+                        <img src="Pics/revive-goods-logo.png" alt="">
+                        <p>Revive Goods</p> 
+                    </div>
+                        <div class="navbar"> 
+                            <li><a href="/profile.html">ໂປຣຟາຍ</a></li>
+                            <li><a href="home.html">ຫນ້າຫຼັກ</a></li> 
+                            <li><a href="home.html#Top hot">ມາແຮງ</a></li> 
+                            <li><a href="home.html#Trending Games">ຂອງຫລິ້ນ</a></li> 
+                            <li><a href="home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+                            <li><a href="home.html#Creative Games">ປື້ມ</a></li>
+                            <br>
+                            <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li> 
+                            <li><a href="contact.html">ຕິດຕໍ່</a></li> 
+                            <br>
+                            <li><a href="./auth-login-Register-basic.html">ອອກຈາກລະບົບ</a></li> 
+                        </div> 
+                </div>
+
+                
+            <!--Notification-->
+        <div class="notification">
+            <div class="notification-box">
+                <i class='bx bxs-check-circle' ></i>
+                <p>ສິນຄ້າທີ່ຕ້ອງການສັ່ງຊື້</p>
+            </div>
+            <div class="notification-box box-color">
+                <i class='bx bxs-check-circle' ></i>
+                <p>ໃສ່ຄູປອງເພື່ອຮັບສ່ວນຫຼຸດ</p>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    
+    
+
+
+      
+    <!-- Trending Section start -->
+    <section class="trending container" id="trending"> 
+        <div class="heading"> 
+            <i class='bx bxs-hot'></i>     
+            <h2 id="Trending Games" class="h2"> Toys</h2>
+        </div> 
+        <!-- Content -->
+        <div class="trending-content swiper">
+            <div class="swiper-wrapper">
+                
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                       
+                        <a href="farcry6.html">
+                            <img src="Pics/White-TShirt.jpeg" alt="Image 1" class="image" >
+                        
+                        </a>
+                        
+                        <div class="box-text">
+                            <h2> ເສື້ອ T-shirt</h2>
+                           
+                            
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <span>45.000 ກີບ</span>
+                                </div>
+                                <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p>
+                                 </a> 
+                                 
+                            </div>   
+                            <br>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                       
+                        <a href="CS-GO.html">
+                            <img src="Pics/Sweater.jpeg" alt="Image 1" class="image" >
+                            
+                        </a>
+                        
+                        <div class="box-text">
+                            <h2> ເສື້ອກັນຫນາວ</h2>
+                            
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <span>60.000 ກີບ</span>
+                                </div>
+                                <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                   <!-- Slide 3 -->
+                   <div class="swiper-slide">
+                    <div class="box">
+                       
+                        <a href="2-points-Hospital.html">
+                            <img src="Pics/Child Colthes.jpeg" alt="Image 1" class="image" >
+                            
+                        </a>
+                        
+                        <div class="box-text">
+                            <h2> ຊຸດນອນເດັກນ້ອຍ</h2>
+                            
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <span>55.000 ກີບ</span>
+                                </div>
+                                <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                       
+                        <a href="Civilization 6.html">
+                            <img src="Pics/Short-pant.jpeg" alt="Image 1" class="image" >
+                            
+                        </a>
+                        
+                        <div class="box-text">
+                            <h2> ໂສ້ງຢີນຂາສັ້ນ</h2>
+                            
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <span>63.000 ກີບ</span>
+                                </div>
+                                <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                 <!-- Slide 5 -->
+                 <div class="swiper-slide">
+                    <div class="box">
+                       
+                        <a href="Civilization 6.html">
+                            <img src="Pics/Sneaker.jpeg" alt="Image 1" class="image" >
+                        </a>
+                        
+                        <div class="box-text">
+                            <h2>ເກີບ</h2>
+                            
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-purchase-tag'></i>
+                                    <span>83.000 ກີບ</span>
+                                </div>
+                                <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                
+           
+            </div>
+        </div>
+    </section>
+      <!-- Trending Section End -->
+    
+     <!-- Action Game Section start -->
+    <section class="trending container" id="trending" > 
+        <div class="heading"> 
+            
+        </div> 
+        <!-- Content -->
+        <div class="trending-content swiper">
+            <div class="swiper-wrapper">
+               <!--Box 1 -->
+               <div class="swiper-slide">
+                <div class="box">
+                   
+                    <a href="farcry6.html">
+                        <img src="Pics/toys-01.jpeg" alt="Image 1" class="image" >
+                    
+                    </a>
+                    
+                    <div class="box-text">
+                        <h2> ຕຸກກະຕາຢູນີຄອນ</h2>
+                        
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-purchase-tag'></i>
+                                <span>64.000 ກີບ</span>
+                            </div>
+                            <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="swiper-slide">
+                <div class="box">
+                   
+                    <a href="CS-GO.html">
+                        <img src="Pics/toy-02.jpeg" alt="Image 1" class="image" >
+                        
+                    </a>
+                    
+                    <div class="box-text">
+                        <h2> ຂອງຫລີ້ນໄດໂນເສົາ</h2>
+                        
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-purchase-tag'></i>
+                                <span>59.000 ກີບ</span>
+                            </div>
+                            <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+               <!-- Box 3 -->
+               <div class="swiper-slide">
+                <div class="box">
+                   
+                    <a href="2-points-Hospital.html">
+                        <img src="Pics/toy-03.jpeg" alt="Image 1" class="image" >
+                        
+                    </a>
+                    
+                    <div class="box-text">
+                        <h2> ຕຸກກະຕາໄດໂນເສົາ</h2>
+                        
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-purchase-tag'></i>
+                                <span>55.000 ກີບ</span>
+                            </div>
+                            <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="swiper-slide">
+                <div class="box">
+                   
+                    <a href="Civilization 6.html">
+                        <img src="Pics/toy-04.jpeg" alt="Image 1" class="image" >
+                        
+                    </a>
+                    
+                    <div class="box-text">
+                        <h2> Teddy bear</h2>                       
+                        <div class="rating-download">
+                            <div class="rating">
+                                <i class='bx bxs-purchase-tag'></i>
+                                <span>150.000 ກີບ</span>
+                            </div>
+                            <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            
+
+
+            
+                
+           
+        </div>
+    </div>
+    </section>
+      <!-- Action Games Section End -->
+    
+     <!-- Indie Game Section start -->
+    <section class="trending container" id="trending"> 
+        <div class="heading"> 
+           
+        </div> 
+        <!-- Content -->
+        <div class="trending-content swiper">
+            <div class="swiper-wrapper">
+                <!--Box 1 -->
+                <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="farcry6.html">
+                         <img src="Pics/jelwery-01.jpeg" alt="Image 1" class="image" >
+                     
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2> ແຫວນເພັດ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>9.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+             <!-- Box 2 -->
+             <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="CS-GO.html">
+                         <img src="Pics/jewelry-02.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2> ໂມງແຂນ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>60.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+                <!-- Box 3 -->
+                <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="2-points-Hospital.html">
+                         <img src="Pics/jewelry-03.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2> ຊຸດເຄື່ອງປະດັບແຂນ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>98.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+             <!-- Box 4 -->
+             <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="Civilization 6.html">
+                         <img src="Pics/jewelry-04.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2> ປອກແຂນ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>23.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+                
+           
+        </div>
+    </div>
+    </section>
+      <!-- Indie Games Section End -->
+    
+    
+     <!-- Creative Game Section start -->
+    <section class="trending container" id="trending"> 
+        <div class="heading"> 
+            
+        </div> 
+        <!-- Content -->
+        <div class="trending-content swiper">
+            <div class="swiper-wrapper">
+                <!--Box 1 -->
+                <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="farcry6.html">
+                         <img src="Pics/book-01.jpeg" alt="Image 1" class="image" >
+                     
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2>ປື້ມ Atomic Habits</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>39.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+             <!-- Box 2 -->
+             <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="CS-GO.html">
+                         <img src="Pics/book-02.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2>ປື້ມເຮົາເຕີບໂຕຂື້ນໃນທຸກວັນ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>40.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+                <!-- Box 3 -->
+                <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="2-points-Hospital.html">
+                         <img src="Pics/book-03.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     
+                     <div class="box-text">
+                         <h2> ປື້ມນີ້ເຮົາໃຊ້ຊີວິດຍາກເກີນໄປຫລືບໍ່</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>58.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+             <!-- Box 4 -->
+             <div class="swiper-slide">
+                 <div class="box">
+                    
+                     <a href="Civilization 6.html">
+                         <img src="Pics/book-04.jpeg" alt="Image 1" class="image" >
+                         
+                     </a>
+                     <div class="box-text">
+                         <h2>ປື້ມເລີກເປັນຄົນດີແລ້ວຈະມີຄວາມສຸກ</h2>
+                         
+                         <div class="rating-download">
+                             <div class="rating">
+                                 <i class='bx bxs-purchase-tag'></i>
+                                 <span>23.000 ກີບ</span>
+                             </div>
+                             <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ສັ່ງຊື້ເລີຍ</p></a>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+                
+           
+        </div>
+    </div>
+    </section>
+      <!-- Creative Games Section End -->
+
+    
+    <!-- Start footer -->
+
+    <footer class="footer">
+        <div class="container-footer">
+         <div class="row">
+           <div class="footer-col">
+             <h4>company</h4>
+             <ul>
+               <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+               <li><a href="contact.html">ຕິດຕໍ່</a></li>
+             </ul>
+           </div>
+          <div class="footer-col">
+      <h4>Games</h4>
+      <ul>
+      <li><a href="./home.html#Trending Games">ມາແຮງ</a></li>
+      <li><a href="./home.html#Action Games">ຂອງຫລີ້ນ</a></li>
+      <li><a href="./home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+      <li><a href="./home.html#Creative Games">ປື້ມ</a></li>
+      </ul>
+      </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="https://web.facebook.com/PixelCrazy8bit"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com/eightbitfun"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/8bitbh/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_discover"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+      </footer>
+   
+   <!-- end footer-->
+   
+    
+
+    
+    
+<!-- Link Swiper File -->
+    <script src="js/swiper-bundle.min.js"></script>
+<!-- Link To JS -->
+	<script src="js/main.js"></script>
+<!-- Link To JS Slide -->
+	<script src="js/slide.js"></script>
+    <script src="https://kit.fontawesome.com/51a07ca7f1.js" crossorigin="anonymous"></script>
+</body> 
+</html> 
+
+

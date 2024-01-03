@@ -1,0 +1,598 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Revive Goods</title> 
+<!-- Fav Icon -->
+<link rel="icon" href="Pics/revive-goods-logo.png" type="image/x-icon">
+<!-- Link To CSS -->
+<link rel="stylesheet" href="CSS/profile.css">
+<link rel="stylesheet" href="CSS/sale-page.css">
+
+<!-- Footer -->
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/category-bar.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!-- Box Icon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- Swiper CSS File Link -->
+<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+
+
+<link rel="stylesheet" href="/CSS/bootstrap.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
+</head> 
+
+<body> 
+    <!--loader-->
+    <div id="preloader">
+        <div class="loading">
+            <span class="shape shape-1"></span>
+            <span class="shape shape-2"></span>
+            <span class="shape shape-3"></span>
+            <span class="shape shape-4"></span>
+        </div>
+    </div>
+
+    <!--Custom Scroll Bar-->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar"></div>
+    </div>
+    <!-- header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="./home.html">
+                <img src="./Pics/revive-goods-logo.png" alt="Revive Goods Logo">
+            </a>
+        
+
+            <form class="search-form" onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="ຄົ້ນຫາ..." autofocus required />
+                <button type="submit">Go</button>    
+              </form>
+            
+            <!-- Nav Icon -->
+                <div class="nav-icons"> 
+                     <i class='bx bx-cart' id="bell-icon"><span></span></i> 
+                    <a href="./auth-login-Register-basic.html"><i class='bx bxs-user-circle'></i> </a>
+                       
+                            <div class="menu-icon"> 
+                                <div class="line1"></div> 
+                                <div class="line2"></div> 
+                                <div class="line3"></div> 
+                            </div>
+                </div>
+
+                
+
+                
+                <div class="menu"> 
+                    <div class="submenu">
+                        <img src="Pics/revive-goods-logo.png" alt="">
+                        <p>Revive Goods</p> 
+                    </div>
+                        <div class="navbar"> 
+                            <li><a href="/profile.html">ໂປຣຟາຍ</a></li>
+                            <li><a href="home.html">ຫນ້າຫຼັກ</a></li> 
+                            <li><a href="home.html#Top hot">ມາແຮງ</a></li> 
+                            <li><a href="home.html#Trending Games">ຂອງຫລິ້ນ</a></li> 
+                            <li><a href="home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+                            <li><a href="home.html#Creative Games">ປື້ມ</a></li>
+                            <br>
+                            <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li> 
+                            <li><a href="contact.html">ຕິດຕໍ່</a></li> 
+                            <br>
+                            <li><a href="./auth-login-Register-basic.html">ອອກຈາກລະບົບ</a></li> 
+                        </div> 
+                </div>
+                    <style>
+                        .shape{
+                            display: block;
+                            position: absolute;
+                            height: 20px;
+                            width: 40px;
+                            background-color: #fff;
+                            mix-blend-mode: exclusion;
+                            -webkit-backface-visibility: visible;
+                            backface-visibility: visible;
+                        }
+                        .shape.shape-1 {
+                            animation: spin1 2s ease-in-out infinite;
+                            animation-fill-mode: forwards;
+                        }
+                        .shape.shape-2 {
+                            animation: spin2 2s ease-in-out infinite;
+                            animation-fill-mode: forwards;
+                        }
+                        .shape.shape-3 {
+                            animation: spin3 2s ease-in-out infinite;
+                            animation-fill-mode: forwards;
+                        }
+                        .shape.shape-4 {
+                            animation: spin4 2s ease-in-out infinite;
+                            animation-fill-mode: forwards;
+                        }
+                        .shape.shape-1 {
+                            top: 20px;
+                            left: 40px;
+                        }
+                        .shape.shape-2 {
+                            right: 20px;
+                            top: 40px;
+                            width: 20px;
+                            height: 40px;
+                        }
+                        .shape.shape-3 {
+                            bottom: 20px;
+                            left: 40px;
+                        }
+                        .shape.shape-4 {
+                            left: 20px;
+                            top: 40px;
+                            width: 20px;
+                            height: 40px;
+                        }
+                        #preloader {
+                            background: var(--dark-color);
+                            height: 100vh;
+                            width: 100%;
+                            position: fixed;
+                            z-index: 100;
+                            display: flex;
+                            top: 0%;
+                            justify-content: center;
+                            
+                        }
+                        .loading{
+                            width: 120px;
+                            height: 120px;
+                            position: relative;
+                            margin: 150px auto;
+                            background-color: var(--dark-color);
+                            animation: spin 2s linear infinite;
+                            animation-direction: reverse;
+                        }
+                        .menu { 
+                            position: fixed;
+                            left: 0; 
+                            top: 0; 
+                            width: 100%; 
+                            height: 100vh; 
+                            background: rgba(0, 0, 14, 0.9);
+                            z-index: 106; 
+                            display: flex; 
+                            align-items: center; 
+                            justify-content: space-between; 
+                            transition: 0.5s; 
+                            clip-path: circle(0% at 100% 0%);
+                            }
+                            
+                            .submenu img p{
+                                position: fixed;
+                            left: 0; 
+                            top: 0; 
+                            width: 100%; 
+                            height: 100vh; 
+                            background: rgba(0, 0, 14, 0.9);
+                            z-index: 106; 
+                            display: flex; 
+                            align-items: center; 
+                            justify-content: space-between; 
+                            transition: 0.5s; 
+                            clip-path: circle(0% at 100% 0%);
+                            }
+                            
+                            .menu.active{
+                             clip-path: circle(144% at 100% 0%);
+                            }
+                            .menu img {
+                                width: 400px;
+                                height: auto;
+                                margin: 15em;
+                            }
+                            .navbar{
+                                display: grid;
+                                row-gap: 1rem;
+                                text-align: right;
+                                padding-right: 2rem;
+                                
+                            }
+                            
+                            .navbar a{
+                                font-size: 1.6rem;
+                                color: white;
+                                font-weight: 500;
+                                transition: 0.2s;
+                            }
+                            .navbar p2{
+                                font-size: 2.4rem;
+                                color: goldenrod;
+                                font-weight: 500; 
+                            }
+                            .navbar p3{
+                                font-size: 1.6rem;
+                                color: var(--text-color);
+                                font-weight: 500;
+                                border-bottom: 4px solid var(--main-color);
+                            }
+                            .navbar a:hover{
+                                border-bottom: 4px solid var(--main-color);
+                                font-size: 2.4rem;
+                            }
+                    </style>
+                </div>
+
+                
+            <!--Notification-->
+        <div class="notification">
+            <div class="notification-box">
+                <i class='bx bxs-check-circle' ></i>
+                <p>ສິນຄ້າທີ່ຕ້ອງການສັ່ງຊື້</p>
+            </div>
+            <div class="notification-box box-color">
+                <i class='bx bxs-check-circle' ></i>
+                <p>ໃສ່ຄູປອງເພື່ອຮັບສ່ວນຫຼຸດ</p>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <img src="/Pics/user-02.jpeg" alt="" />
+                        <div class="file btn btn-lg btn-primary">
+                            Change Photo
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        
+                        
+                    <h5 id="userName">Name: Keo Phanouvong</h5>
+                    <h6 id="userEmail">Email: keo@gmail.com</h6>
+
+                        <h6>ຮ້ານ: ເສື້ອຜ້າສົດໃສ</h6>
+                        <p>ລາຍຮັບທັງໝົດ: 345.000 ກີບ</p>
+                        <p>ຈຳນວນສິນຄ້າທັງໝົດທີ່ຂາຍ: 3</p>
+                        <style>
+                            .profile-head p{
+                                color: black;
+                            }
+                        </style>
+                        
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ສິນຄ້າທີ່ຂາຍ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">ສິນຄ້າທີ່ສັ່ງຊື້</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-work">
+                        <p>ຄະແນນຣີວິວຮ້ານ</p>
+
+                        <div class="d-flex mb-3">
+                            <div class="text-primary mr-2">
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star"></small>
+                                <small class="fas fa-star-half-alt"></small>
+                                <small class="far fa-star"></small>
+                            </div>
+                            <small class="pt-1">(50 Reviews)</small>
+                        </div>
+                        <br>
+                        <p>ຄອມເມັ້ນ</p>
+                        <div class="media mb-4">
+                            <img src="/Pics/user-01.jpeg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                            <div class="media-body">
+                                <h6>John Doe<small> - <i>01 Jan 2045</i></small></h6>
+                                <div class="text-primary mb-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p>ຮ້ານນີ້ດີ ແລະ ຕົງປົກ.</p>
+                            </div>
+                        </div>
+
+                        <div class="media mb-4">
+                            <img src="/Pics/user-03.jpeg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                            <div class="media-body">
+                                <h6>Jong um<small> - <i>02 Jan 2045</i></small></h6>
+                                <div class="text-primary mb-0">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>ຮ້ານນີ້ຂ້ອຍແນະນຳເລີຍ.</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                            <div class="col-md-3">
+                                <a href="/input.html" class="box-btn"><p>ເພີ່ມສິນຄ້າ +</p></a>
+                            </div>
+
+
+                            <br>
+                            
+                            
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <a href="detail-shirt.html">
+                                                <img src="Pics/White-TShirt.jpeg" alt="Image 1" class="image" >
+                                            </a>
+                                            <div class="box-text">
+                                                <h2> ເສື້ອ T-shirt</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>45.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="./detail-shirt.html" class="box-btn"><p>ແກ້ໄຂ</p>
+                                                     </a> 
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <a href="CS-GO.html">
+                                                <img src="Pics/Sweater.jpeg" alt="Image 1" class="image" >
+                                            </a>
+                                            <div class="box-text">
+                                                <h2> ເສື້ອກັນຫນາວ</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>60.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ແກ້ໄຂ</p></a>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                           
+                                            <a href="2-points-Hospital.html">
+                                                <img src="Pics/Child Colthes.jpeg" alt="Image 1" class="image" >
+                                                
+                                            </a>
+                                            
+                                            <div class="box-text">
+                                                <h2> ຊຸດນອນເດັກນ້ອຍ</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>55.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ແກ້ໄຂ</p></a>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                           
+                                            <a href="Civilization 6.html">
+                                                <img src="Pics/Short-pant.jpeg" alt="Image 1" class="image" >
+                                                
+                                            </a>
+                                            
+                                            <div class="box-text">
+                                                <h2> ໂສ້ງຢີນຂາສັ້ນ</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>63.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p>ແກ້ໄຂ</p></a>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <style>
+                                .box-btn p3{color: chocolate;}
+                                .box-btn p2{color: green;}
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                           
+                                            <a href="farcry6.html">
+                                                <img src="Pics/toys-01.jpeg" alt="Image 1" class="image" >
+                                            
+                                            </a>
+                                            
+                                            <div class="box-text">
+                                                <h2> ຕຸກກະຕາຢູນີຄອນ</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>64.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="https://store.epicgames.com/en-US/p/far-cry-6" class="box-btn"><p3>ສິນຄ້າກຳລັງຈັດສົ່ງ</p3></a>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                           
+                                            <a href="CS-GO.html">
+                                                <img src="Pics/toy-02.jpeg" alt="Image 1" class="image" >
+                                                
+                                            </a>
+                                            
+                                            <div class="box-text">
+                                                <h2> ຂອງຫລີ້ນໄດໂນເສົາ</h2>
+                                                <h2> ຈຳນວນ: 15</h2>
+                                                <div class="rating-download">
+                                                    <div class="rating">
+                                                        <i class='bx bxs-purchase-tag'></i>
+                                                        <span>59.000 ກີບ</span>
+                                                    </div>
+                                                    <a href="" class="box-btn"><p2>ສິນຄ້າມາຮອດແລ້ວ</p2></a>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    
+    <!-- Start footer -->
+
+    <footer class="footer">
+        <div class="container-footer">
+         <div class="row">
+           <div class="footer-col">
+             <h4>company</h4>
+             <ul>
+               <li><a href="about.html">ກ່ຽວກັບພວກເຮົາ</a></li>
+               <li><a href="contact.html">ຕິດຕໍ່</a></li>
+             </ul>
+           </div>
+          <div class="footer-col">
+      <h4>Games</h4>
+      <ul>
+      <li><a href="./home.html#Trending Games">ມາແຮງ</a></li>
+      <li><a href="./home.html#Action Games">ຂອງຫລີ້ນ</a></li>
+      <li><a href="./home.html#Indie Games">ເຄື່ອງປະດັບ</a></li>
+      <li><a href="./home.html#Creative Games">ປື້ມ</a></li>
+      </ul>
+      </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="https://web.facebook.com/PixelCrazy8bit"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com/eightbitfun"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/8bitbh/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_discover"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+      </footer>
+   
+   <!-- end footer-->
+   
+    
+
+    
+    
+<!-- Link Swiper File -->
+    <script src="js/swiper-bundle.min.js"></script>
+<!-- Link To JS -->
+	<script src="js/main.js"></script>
+<!-- Link To JS Slide -->
+	<script src="js/slide.js"></script>
+    
+    <script src="https://kit.fontawesome.com/51a07ca7f1.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const userEmail = 'alexphouthaseansimahanoreal@gmail.com'; // replace with the actual user email
+            fetch(`/user/${userEmail}`)
+                .then(response => response.json())
+                .then(user => {
+                    document.getElementById('userName').innerText = 'Name: ' + user.user_name;
+                    document.getElementById('userEmail').innerText = 'Email: ' + user.email;
+                })
+                .catch(error => console.error('Error fetching user data:', error));
+        });
+      </script>
+</body> 
+
+</html>

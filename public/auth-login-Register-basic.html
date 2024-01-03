@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revive Goods</title>
+  <!-- Fav Icon -->
+  <link rel="icon" href="Pics/revive-goods-logo.png" type="image/x-icon">
+  <!-- Link To CSS -->
+
+  <!-- Footer -->
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/category-bar.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Box Icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Swiper CSS File Link -->
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="loading">
+      <span class="shape shape-1"></span>
+      <span class="shape shape-2"></span>
+      <span class="shape shape-3"></span>
+      <span class="shape shape-4"></span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Sign in/up Form</h2>
+    <br>
+    <!-- loader -->
+
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="/register" method="POST">
+          <a href="/">
+            <img src="Pics/revive-goods-logo.png" alt="Revive Goods Logo">
+          </a>
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text"  placeholder="Full name" id="name" name="name" />
+          <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" />
+          <input type="password" class="form-control" placeholder="Password" id="password" name="password" />
+          <button type="submit">ສະຫມັກເລີຍ</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in-container">
+        <form action="/home" method="post">
+          <a href="/">
+            <img src="Pics/revive-goods-logo.png" alt="Revive Goods Logo">
+          </a>
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <a href="/auth-forgot-password-basic.html">ລືມລະຫັດຜ່ານບໍ?</a>
+          <button type="submit">ເຂົ້າສູ່ລະບົບ</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>ຍິນດີຕ້ອນຮັບກັບມາ!</h1>
+            <p>ກະລຸນາລ໋ອກອິນເຂົ້າສູ່ລະບົບ</p>
+            <button class="ghost" id="signIn">ລົງທະບຽນ</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>ສະບາຍດີ!</h1>
+            <p>ກະລຸນາປ້ອນຂໍ້ມູນເພື່ອມາເປັນສ່ວນຫນື່ງນຳກັນ</p>
+            <button class="ghost" id="signUp">ສະຫມັກເປັນສະມາຊິກ</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+	document.addEventListener('DOMContentLoaded', function () {
+	  const signInButton = document.getElementById('signIn');
+	  const signUpButton = document.getElementById('signUp');
+	  const container = document.getElementById('container');
+  
+	  signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	  });
+  
+	  signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	  });
+  
+	  setTimeout(function () {
+		console.log("Hiding preloader");
+		document.getElementById('preloader').style.display = 'none';
+	  }, 2000);
+	});
+
+	
+	
+	</script>
+	 
+	 
+  
+  
+
+</body>
+
+</html>
